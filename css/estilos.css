@@ -20,6 +20,7 @@ header {
   padding: 1em;
   border-radius: 20px;
   border: 2px solid;
+  width: auto;
 }
 
 nav ul {
@@ -203,7 +204,8 @@ ol{
   object-fit:cover
 }
 .parrafo-quienes-somos{
-  max-width: 600px;       /* ancho máximo para que no se vea demasiado extendido */
+  display: flex;
+  max-width: 80%;       /* ancho máximo para que no se vea demasiado extendido */
   margin: 0 auto;         /* centrado horizontal */
   background-color: #ecb0b0;
   padding: 1.5rem;
