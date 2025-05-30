@@ -80,9 +80,10 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(255, 255, 255);
+  color: rgb(28, 71, 71);
   text-decoration: none;
   font-size: larger;
+  font-weight: 600;
 }
 nav ul li a:hover {
   color: #d18ab4;
@@ -314,9 +315,100 @@ ol {
 }
 
 /* pagina3 */
+.Contenedor_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.Titulopag {
+  max-width: 1200px;
+  width: 90%;
+  padding: 10px;
+  margin: none;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
+.Titulopag h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
 .Titulopag ol {
-  font-size: x-large;
-  margin: 20px;
-  text-align: justify;
+  padding-left: 20px;
+  font-size: 1.5rem;
+}
+
+.Titulopag li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+/* pagina 4 */
+
+.formulario-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+/* Estilo del formulario */
+.formulario {
+  background-color: #ecb0b0;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: rgb(28, 71, 71);
+}
+
+/* Etiquetas y campos */
+.formulario label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: rgb(28, 71, 71);
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #f9e8e5;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+/* Botón */
+.formulario button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #0a70dee9;
 }
