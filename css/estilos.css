@@ -315,17 +315,20 @@ ol {
 }
 
 /* pagina3 */
+
 .Contenedor_principal {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
+
+  
 .Titulopag {
   max-width: 1200px;
-  width: 100%;
-  padding: 10px;
-  margin: none;
+  width: 95%;
+  padding: 0px;
+  margin: 0px;
   border-radius: 10px;
   font-family: sans-serif;
 }
