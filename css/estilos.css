@@ -287,14 +287,6 @@ ol {
 
 /* página-2 */
 
-.tarjeta-candidato {
-  text-align: justify;
-  background-color: #ecb0b0;
-  border-radius: 20px;
-  border-style: groove;
-  margin: 30px;
-}
-
 .tarjeta-candidato img {
   border-radius: 300px;
   width: 200px;
@@ -310,9 +302,48 @@ ol {
   background-color: #e2e2e2;
   border: #155743 solid;
   color: #22856c;
-  margin: 30px;
-  margin-inline: 60px;
+  margin: 0px;
+  margin-inline: 0px;
 }
+.contenedor-candidatos {
+  display: flex;
+  flex-wrap: wrap;            /* Para que salten de línea si no entran */
+  justify-content: center;    /* Centra las tarjetas */
+  gap: 20px;                  /* Espacio entre tarjetas */
+  padding: 20px;
+}
+
+.tarjeta-mascota {
+  width: 250px;
+  background-color: #ecb0b0;  /* Color claro, combínalo con tu paleta */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 16px;
+}
+
+.tarjeta-mascota img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.boton-adoptar {
+  background-color: #ce62c7;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton-adoptar:hover {
+  background-color: #5b3c2a;
+}
+
 
 /* pagina3 */
 
@@ -323,7 +354,6 @@ ol {
   min-height: 100vh;
 }
 
-  
 .Titulopag {
   max-width: 1200px;
   width: 95%;
@@ -414,4 +444,90 @@ ol {
 
 .formulario button:hover {
   background-color: #0a70dee9;
+}
+/* pagina 5 */
+
+#contenedorOpiniones {
+  background-color: #ecb0b0cc;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(176, 16, 16, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #161616;
+}
+
+#contenedorOpiniones h2 {
+  text-align: center;
+  color: #1e634e;
+  margin-bottom: 1.5rem;
+}
+
+#contenedorOpiniones form#form-opinion {
+  display: flex;
+  flex-direction: column;
+}
+
+#contenedorOpiniones form#form-opinion input,
+#contenedorOpiniones form#form-opinion textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #a96396;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+#contenedorOpiniones form#form-opinion input:focus,
+#contenedorOpiniones form#form-opinion textarea:focus {
+  border-color: #d18ab4;
+  outline: none;
+  box-shadow: 0 0 5px #d18ab4aa;
+}
+
+#contenedorOpiniones form#form-opinion button {
+  background-color: #af52a0;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#contenedorOpiniones form#form-opinion button:hover {
+  background-color: #d18ab4;
+}
+
+#contenedorOpiniones #opiniones-container {
+  margin-top: 2rem;
+}
+
+/* Opiniones individuales */
+
+#contenedorOpiniones .opinion-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+  border: 20px #155743;
+}
+
+#contenedorOpiniones .opinion-item h4 {
+  margin: 1rem;
+  color: #af52a0;
+}
+
+#contenedorOpiniones .opinion-item p {
+  margin: 20px;
+  font-style: italic;
+  line-height: 1.4;
 }
