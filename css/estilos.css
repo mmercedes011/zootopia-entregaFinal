@@ -307,15 +307,15 @@ ol {
 }
 .contenedor-candidatos {
   display: flex;
-  flex-wrap: wrap;            /* Para que salten de línea si no entran */
-  justify-content: center;    /* Centra las tarjetas */
-  gap: 20px;                  /* Espacio entre tarjetas */
+  flex-wrap: wrap;            
+  justify-content: center;    
+  gap: 20px;                 
   padding: 20px;
 }
 
 .tarjeta-mascota {
   width: 250px;
-  background-color: #ecb0b0;  /* Color claro, combínalo con tu paleta */
+  background-color: #ecb0b0;  
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   text-align: center;
